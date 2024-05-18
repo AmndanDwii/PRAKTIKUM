@@ -11,6 +11,7 @@ return new class extends Migration
 /**
 * Run the migrations.
 */
+// protected $fillable=['product_brand','status'];
 public function up(): void
 {
 Schema::create('brands', function (Blueprint $table) {

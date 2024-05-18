@@ -7,10 +7,10 @@ use App\Http\Controllers\ProductController;
 
 
 Route::get('/', function () {
-    return redirect()->route('brand.index');
+    return redirect()->route('brands.index');
 });
 
-Route::resource('brand', BrandController::class);
+Route::resource('brands', BrandController::class);
 Route::resource('product-categories', ProductCategoryController::class);
 Route::resource('products', ProductController::class);
 
